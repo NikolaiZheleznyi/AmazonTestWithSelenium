@@ -32,7 +32,7 @@ public class AmazonHomePage {
     }
 
     public void searchForTerms(String term) {
-        searchBtnSearchField.sendKeys(term);
+        searchField.sendKeys(term);
         searchBtnSearchField.click();
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.id("nav-search-submit-button")));
